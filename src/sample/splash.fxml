@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="splashContent" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="150.0" prefWidth="250.0" xmlns="http://javafx.com/javafx/8.0.172-ea"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Splash">
+    <children>
+        <ImageView fitHeight="150.0" fitWidth="250.0" layoutX="25.0" layoutY="30.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="@../loadingAnimation.gif"/>
+            </image>
+        </ImageView>
+        <Text fill="WHITE" layoutX="80.0" layoutY="60.0" stroke="#ff671d" strokeType="OUTSIDE" strokeWidth="0.5"
+              text="Ładowanie...">
+            <font>
+                <Font name="Agency FB" size="24.0"/>
+            </font>
+        </Text>
+    </children>
+</AnchorPane>

@@ -1,0 +1,23 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="TelewizjaTychy">
+    <output-path>$PROJECT_DIR$/out/artifacts/TelewizjaTychy</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="appClass" value="sample.Main" />
+        <option name="description" value="" />
+        <option name="htmlPlaceholderId" value="" />
+        <option name="nativeBundle" value="all" />
+        <option name="paramFile" value="-Dfile.encoding=UTF-8" />
+        <option name="title" value="" />
+        <option name="vendor" value="" />
+        <option name="version" value="" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="TelewizjaTychy.jar">
+        <element id="module-output" name="TelewizjaTychy" />
+      </element>
+      <element id="library" level="project" name="mysql-connector-java-8.0.17" />
+    </root>
+  </artifact>
+</component>

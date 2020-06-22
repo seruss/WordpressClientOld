@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="window" prefHeight="883.0" prefWidth="580.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <ImageView fitHeight="117.0" fitWidth="580.0" layoutX="7.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@Untitled-1.2.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="668.0" fitWidth="570.0" layoutX="5.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@Untitled-2.2.png" />
+            </image>
+        </ImageView>
+        <Text fx:id="exitButton" layoutX="542.0" layoutY="36.0" onMouseEntered="#exitEntered" onMouseExited="#exitReleased" onMousePressed="#exit" strokeType="OUTSIDE" strokeWidth="0.0" text="x">
+            <font>
+                <Font size="36.0" />
+            </font>
+        </Text>
+        <Text fill="#eed8d8" fontSmoothingType="LCD" layoutX="37.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wklej link do filmu na youtube" wrappingWidth="242.9830722808838">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Text>
+        <TextField fx:id="urlAddress" layoutX="37.0" layoutY="174.0" prefHeight="25.0" prefWidth="419.0" />
+        <Button fx:id="applyButton" alignment="CENTER" contentDisplay="TOP" graphicTextGap="0.0" layoutX="351.0" layoutY="686.0" maxHeight="27.0" mnemonicParsing="false" onMouseClicked="#publish" prefHeight="27.0" prefWidth="155.0" text="Opublikuj" textOverrun="CLIP">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Button>
+        <Button fx:id="checkButton" alignment="CENTER" contentDisplay="TOP" graphicTextGap="0.0" layoutX="83.0" layoutY="686.0" maxHeight="27.0" mnemonicParsing="false" onMouseClicked="#checkData" prefHeight="27.0" prefWidth="155.0" text="Sprawdź" textOverrun="CLIP">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Button>
+        <TextField fx:id="postDate" layoutX="39.0" layoutY="367.0" prefHeight="25.0" prefWidth="135.0" />
+        <TextField fx:id="postNumber" layoutX="260.0" layoutY="367.0" prefHeight="25.0" prefWidth="81.0" />
+        <Text fill="#eed8d8" fontSmoothingType="LCD" layoutX="39.0" layoutY="361.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data posta" wrappingWidth="242.9830722808838">
+            <font>
+                <Font name="Bookman Old Style Bold" size="14.0" />
+            </font>
+        </Text>
+        <Text fill="#eed8d8" fontSmoothingType="LCD" layoutX="260.0" layoutY="361.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Numer posta" wrappingWidth="105.98307228088379">
+            <font>
+                <Font name="Bookman Old Style Bold" size="14.0" />
+            </font>
+        </Text>
+        <Text fill="#eed8d8" fontSmoothingType="LCD" layoutX="39.0" layoutY="459.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Opis posta" wrappingWidth="242.9830722808838">
+            <font>
+                <Font name="Bookman Old Style Bold" size="14.0" />
+            </font>
+        </Text>
+        <TextField fx:id="postTitle" layoutX="38.0" layoutY="414.0" prefHeight="25.0" prefWidth="302.0" />
+        <Text fill="#eed8d8" fontSmoothingType="LCD" layoutX="38.0" layoutY="408.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tytuł posta" wrappingWidth="242.9830722808838">
+            <font>
+                <Font name="Bookman Old Style Bold" size="14.0" />
+            </font>
+        </Text>
+        <AnchorPane layoutX="351.0" layoutY="224.0" prefHeight="214.0" prefWidth="196.0">
+            <children>
+                <TreeView fx:id="categories" layoutX="-7.0" layoutY="7.0" prefHeight="214.0" prefWidth="198.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            </children>
+        </AnchorPane>
+        <Text fill="#eed8d8" fontSmoothingType="LCD" layoutX="354.0" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kategorie" wrappingWidth="105.98307009786367">
+            <font>
+                <Font name="Bookman Old Style Bold" size="14.0" />
+            </font>
+        </Text>
+      <AnchorPane layoutX="87.0" layoutY="217.0" prefHeight="115.0" prefWidth="205.0">
+         <children>
+            <ImageView fx:id="thumbnail" fitHeight="115.0" fitWidth="225.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="forward" layoutX="506.0" layoutY="174.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="27.0" text="⪢" />
+      <Button fx:id="back" layoutX="472.0" layoutY="174.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="27.0" text="⪡" />
+      <TextArea fx:id="postDescription" layoutX="39.0" layoutY="464.0" prefHeight="200.0" prefWidth="506.0" />
+    </children>
+</AnchorPane>
